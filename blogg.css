@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: :0px;
+}
+.header{
+    padding: 30px;
+    text-align: center;
+    background-color: blueviolet;
+    color: rgb(128, 16, 16);
+}
+.header h1{
+    font-size: 40px;
+}
+.navbar{
+    overflow: hidden;
+    background-color: gray;
+
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: bisque;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    border: 2px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+
+
+}
+.navbar .right{
+    color: rgb(24, 19, 20);
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+.navbar a:hover{
+    background-color: rgb(162, 172, 172);
+    color: rgba(255, 100, 155, 2);
+
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+.side{
+    display:flex;
+    flex: 20%;
+    background-color: cadetblue;
+    padding: 20px;
+  
+}
+.main{
+    display:flex;
+    flex:80%;
+    background-color: bisque;
+    padding: 20px;
+
+}
+.mainprojects{
+    display: flex;
+    flex: 100%;
+    background-color: rgb(235, 189, 121);
+    padding: 20px;
+}
+.footer{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(245, 237, 237);
+    color: rgb(7, 7, 1);
+    position:absolute;
+    bottom: 0;
+}
+@media screen and (max width: 700px) {
+    .row{
+        flex-direction: column;
+
+    }
+}
+@media screen and (max width: 400px) {
+    .navbar a{
+        float: none;
+        width: 100%;
+
+
+    }
+}
+#box{
+    width:70px;
+    height:70px;
+    background-color:rgb(247, 70, 137);
+    border-radius: 50%;
+    margin: 30px;
+}
